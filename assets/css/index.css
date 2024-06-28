@@ -1,0 +1,265 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+/* NORMALIZE */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Maven Pro", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-brow: #2a2a2a;
+  --color-yellow: #fed001;
+  --color-blue: #003464;
+  --color-textBlue: #071d2e;
+  --color-cards: #eceff4;
+  --color-textWhite: #fafafa;
+  --color-gradientMain: linear-gradient(180deg, #ffffff 0%, #ffff38 100%);
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  font-size: 1.8rem;
+  background-color: var(--color-cards);
+  transition: 0.2s;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  background-color: var(--color-brow);
+  height: 12rem;
+}
+
+.header-content {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img-header {
+  height: 7.4rem;
+}
+
+.navbar {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  text-decoration: none;
+  letter-spacing: 0.06rem;
+  color: var(--color-yellow);
+  border: 2px solid var(--color-yellow);
+  padding: 1rem;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+/* MAIN-CONTENT */
+.main-content {
+  width: 100%;
+  margin: auto;
+}
+
+/* HERO-SECTION */
+.hero_bg {
+  width: 100%;
+  background: var(--color-gradientMain);
+}
+
+.hero-section {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-brow);
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.hero-title {
+  font-size: 6rem;
+  text-align: justify;
+}
+
+.hero-title span {
+  text-transform: uppercase;
+}
+
+.btn {
+  display: block;
+  width: fit-content;
+  color: var(--color-brow);
+  font-weight: bold;
+  text-decoration: none;
+  background-color: var(--color-yellow);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+/* COURSES-SECTION */
+.courses {
+  width: 60%;
+  margin: auto;
+  min-height: 95rem;
+  color: var(--color-brow);
+}
+
+.courses-title {
+  display: block;
+  text-align: center;
+  font-size: 4rem;
+  padding: 7rem;
+}
+
+.courses-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.courses-card {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 3rem;
+  margin-bottom: 5rem;
+  background-color: white;
+  border: 2px solid var(--color-cards);
+  border-radius: 1rem;
+  flex-grow: 1;
+}
+
+.courses-cards-img {
+  max-height: 21rem;
+}
+
+.courses-cards-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 0 3rem;
+}
+
+.courses-cards-p {
+  font-size: 1.6rem;
+  padding: 0 3rem 6rem;
+}
+
+.btn-cards {
+  display: block;
+  margin: 0 auto 7rem;
+  width: fit-content;
+  font-weight: bold;
+  color: var(--color-brow);
+  text-decoration: none;
+  background-color: var(--color-yellow);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+/* ABOUT-SECTION */
+.about-bg {
+  padding: 1px;
+  background-color: var(--color-blue);
+}
+
+.about {
+  display: flex;
+  width: 60%;
+  margin: 4rem auto 0;
+  justify-content: space-between;
+  padding-top: 5rem;
+  gap: 2rem;
+}
+
+.about-img {
+  width: 50%;
+}
+
+.about-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 5rem;
+  gap: 5rem;
+  color: var(--color-textWhite);
+}
+
+.about-title {
+  font-size: 4rem;
+}
+
+/* CONTACT-SECTION */
+.contact {
+  width: 60%;
+  margin: auto;
+}
+
+.contact-title {
+  font-size: 4rem;
+  padding: 7rem;
+  text-align: center;
+}
+
+.contact-img {
+  width: 100%;
+}
+
+.contact-lis {
+  margin: 2rem 0 7rem;
+  list-style: none;
+  text-align: end;
+}
+
+.contact-lis-item {
+  padding: 0.5rem 0;
+}
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  background-color: var(--color-brow);
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-textWhite);
+  letter-spacing: 0.05rem;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--color-textWhite);
+  transition: 0.3s;
+}
+
+.footer-link:hover,
+.nav-link:hover,
+.btn:hover,
+.btn-cards:hover {
+  opacity: 0.9;
+}
