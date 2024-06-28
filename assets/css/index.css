@@ -16,12 +16,12 @@
 }
 
 :root {
-  --color-brow: #2a2a2a;
+  --color-dark: #2a2a2a;
   --color-yellow: #fed001;
-  --color-blue: #003464;
-  --color-textBlue: #071d2e;
-  --color-cards: #eceff4;
-  --color-textWhite: #fafafa;
+  --color-dark2: #003464;
+  --color-textDark2: #071d2e;
+  --color-light: #eceff4;
+  --color-textLight: #fafafa;
   --color-gradientMain: linear-gradient(180deg, #ffffff 0%, #ffff38 100%);
   font-size: 62.5%;
   font-weight: 400;
@@ -30,14 +30,14 @@
 body {
   width: 100%;
   font-size: 1.8rem;
-  background-color: var(--color-cards);
+  background-color: var(--color-light);
   transition: 0.2s;
 }
 
 /* HEADER */
 .header {
   display: flex;
-  background-color: var(--color-brow);
+  background-color: var(--color-dark);
   height: 12rem;
 }
 
@@ -88,7 +88,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--color-brow);
+  color: var(--color-dark);
 }
 
 .hero-text {
@@ -110,7 +110,7 @@ body {
 .btn {
   display: block;
   width: fit-content;
-  color: var(--color-brow);
+  color: var(--color-dark);
   font-weight: bold;
   text-decoration: none;
   background-color: var(--color-yellow);
@@ -124,7 +124,7 @@ body {
   width: 60%;
   margin: auto;
   min-height: 95rem;
-  color: var(--color-brow);
+  color: var(--color-dark);
 }
 
 .courses-title {
@@ -147,7 +147,7 @@ body {
   flex-direction: column;
   gap: 3rem;
   margin-bottom: 5rem;
-  background-color: white;
+  background-color: var(--color-textLight);
   border: 1px solid #ccc;
   border-radius: 1rem;
   flex-grow: 1;
@@ -173,7 +173,7 @@ body {
   margin: 0 auto 7rem;
   width: fit-content;
   font-weight: bold;
-  color: var(--color-brow);
+  color: var(--color-dark);
   text-decoration: none;
   background-color: var(--color-yellow);
   padding: 2rem;
@@ -184,7 +184,7 @@ body {
 /* ABOUT-SECTION */
 .about-bg {
   padding: 1px;
-  background-color: var(--color-blue);
+  background-color: var(--color-dark2);
 }
 
 .about {
@@ -207,7 +207,7 @@ body {
   justify-content: flex-start;
   margin-left: 5rem;
   gap: 5rem;
-  color: var(--color-textWhite);
+  color: var(--color-textLight);
 }
 
 .about-title {
@@ -218,6 +218,7 @@ body {
 .contact {
   width: 60%;
   margin: auto;
+  color: var(--color-textDark2);
 }
 
 .contact-title {
@@ -243,18 +244,18 @@ body {
 /* FOOTER */
 .footer {
   width: 100%;
-  background-color: var(--color-brow);
+  background-color: var(--color-dark);
   height: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-textWhite);
+  color: var(--color-textLight);
   letter-spacing: 0.05rem;
 }
 
 .footer-link {
   text-decoration: none;
-  color: var(--color-textWhite);
+  color: var(--color-textLight);
   transition: 0.3s;
 }
 
