@@ -143,11 +143,10 @@ body {
   display: flex;
   width: 30%;
   flex-direction: column;
-  justify-content: space-evenly;
   gap: 3rem;
   margin-bottom: 5rem;
   background-color: white;
-  border: 2px solid var(--color-cards);
+  border: 1px solid #ccc;
   border-radius: 1rem;
   flex-grow: 1;
 }
