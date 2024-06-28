@@ -8,4 +8,4 @@ https://sergioalten.github.io/AprenserSchool/
 
 - Desenvolver uma landing page simples utilizando HTML, CSS.
 
-![imagem do site](/assets/images/site.jpg.jpg)
+![imagem do site](/assets/images/site.jpg)
